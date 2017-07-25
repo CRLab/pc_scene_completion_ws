@@ -1,0 +1,36 @@
+[submodule "external/keras"]
+	path = external/keras
+	url = https://github.com/fchollet/keras.git
+[submodule "external/Mesh_Reconstruction"]
+	path = external/Mesh_Reconstruction
+	url = https://github.com/CURG/Mesh_Reconstruction.git
+[submodule "external/binvox-rw-py"]
+	path = external/binvox-rw-py
+	url = https://github.com/CURG/binvox-rw-py.git
+[submodule "external/python-pcl"]
+	path = external/python-pcl
+	url = https://github.com/ShapeCompletion3D/python-pcl.git
+[submodule "external/Curvox"]
+	path = external/Curvox
+	url = https://github.com/CURG/Curvox.git
+[submodule "src/pc_object_completion_cnn"]
+	path = src/pc_object_completion_cnn
+	url = https://github.com/CURG/pc_object_completion_cnn.git
+[submodule "src/pc_pipeline_launch"]
+	path = src/pc_pipeline_launch
+	url = https://github.com/CURG/pc_pipeline_launch.git
+[submodule "src/pc_scene_completion_client"]
+	path = src/pc_scene_completion_client
+	url = https://github.com/CURG/pc_scene_completion_client.git
+[submodule "src/pc_scene_completion"]
+	path = src/pc_scene_completion
+	url = https://github.com/CURG/pc_scene_completion.git
+[submodule "src/pc_object_completion_partial"]
+	path = src/pc_object_completion_partial
+	url = https://github.com/CURG/pc_object_completion_partial.git
+[submodule "src/pc_pipeline_msgs"]
+	path = src/pc_pipeline_msgs
+	url = https://github.com/CURG/pc_pipeline_msgs.git
+[submodule "src/pc_filter"]
+	path = src/pc_filter
+	url = https://github.com/CURG/pc_filter.git
