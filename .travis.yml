@@ -48,7 +48,7 @@ before_install:
 
 # Create a catkin workspace with the package under integration.
 install:
-  - cd external
+  - cd /home/travis/build/CURG/pc_scene_completion_ws/external
   # Build eigen
   - cd eigen-eigen-07105f7124f9
   - mkdir build
@@ -62,7 +62,7 @@ install:
   - cmake ..
   - sudo make install
   - cd ../..
-
+  - cd /home/travis/build/CURG/pc_scene_completion_ws/
 
 # Compile and test (mark the build as failed if any step fails). If the
 # CATKIN_OPTIONS file exists, use it as an argument to catkin_make, for example
@@ -74,7 +74,7 @@ install:
 # non-zero when a test fails (which notifies Travis the build failed).
 script:
   - source /opt/ros/$ROS_DISTRO/setup.bash
-  - cd src
+  - cd /home/travis/build/CURG/pc_scene_completion_ws/src
   - catkin_init_workspace
   - cd ..
   - catkin_make
