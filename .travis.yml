@@ -45,6 +45,8 @@ before_install:
   - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin
   - sudo apt-get install ros-$ROS_DISTRO-sensor-msgs ros-$ROS_DISTRO-geometry-msgs  ros-$ROS_DISTRO-tf-conversions  ros-$ROS_DISTRO-shape-msgs  ros-$ROS_DISTRO-dynamic-reconfigure
   - sudo apt-get install ros-$ROS_DISTRO-sensor-msgs ros-$ROS_DISTRO-pcl-ros
+  - sudo apt-get install python-dev
+  - sudo apt-get install cython
 
 # Create a catkin workspace with the package under integration.
 install:
@@ -62,6 +64,18 @@ install:
   - cmake ..
   - sudo make install
   - cd ../..
+  - cd Curvox
+  - sudo python setup.py install
+  - cd ..
+  - cd pycollada 
+  - sudo python setup.py install
+  - cd ..
+  - cd python-pcl
+  - sudo python setup.py install
+  - cd ..
+  - cd PyMCubes
+  - sudo python setup.py install
+  - cd ..
   - cd /home/travis/build/CURG/pc_scene_completion_ws/
 
 # Compile and test (mark the build as failed if any step fails). If the
