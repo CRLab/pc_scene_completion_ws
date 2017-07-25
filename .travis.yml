@@ -68,7 +68,7 @@ install:
   - cd pycollada 
   - sudo python setup.py install
   - cd ..
-  - cd python-pcd
+  - cd python-pcl
   - sudo python setup.py install
   - cd ..
   - cd PyMCubes
