@@ -34,3 +34,9 @@
 [submodule "src/pc_filter"]
 	path = src/pc_filter
 	url = https://github.com/CURG/pc_filter.git
+[submodule "external/PyMCubes"]
+	path = external/PyMCubes
+	url = https://github.com/pmneila/PyMCubes.git
+[submodule "external/pycollada"]
+	path = external/pycollada
+	url = https://github.com/pycollada/pycollada.git
