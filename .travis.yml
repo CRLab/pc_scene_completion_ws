@@ -1,33 +1,4 @@
-# Generic .travis.yml file for running continuous integration on Travis-CI for
-# any ROS package.
-#
-# Available here:
-#   - http://felixduvallet.github.io/ros-travis-integration
-#   - https://github.com/felixduvallet/ros-travis-integration
-#
-# This installs ROS on a clean Travis-CI virtual machine, creates a ROS
-# workspace, resolves all listed dependencies, and sets environment variables
-# (setup.bash). Then, it compiles the entire ROS workspace (ensuring there are
-# no compilation errors), and runs all the tests. If any of the compilation/test
-# phases fail, the build is marked as a failure.
-#
-# We handle two types of package dependencies specified in the package manifest:
-#   - system dependencies that can be installed using `rosdep`, including other
-#     ROS packages and system libraries. These dependencies must be known to
-#     `rosdistro` and get installed using apt-get.
-#   - package dependencies that must be checked out from source. These are handled by
-#     `wstool`, and should be listed in a file named dependencies.rosinstall.
-#
-# There are two variables you may want to change:
-#   - ROS_DISTRO (default is indigo). Note that packages must be available for
-#     ubuntu 14.04 trusty.
-#   - ROSINSTALL_FILE (default is dependencies.rosinstall inside the repo
-#     root). This should list all necessary repositories in wstool format (see
-#     the ros wiki). If the file does not exists then nothing happens.
-#
-# See the README.md for more information.
-#
-# Author: Felix Duvallet <felixd@gmail.com>
+# Based off of travis.yml from https://github.com/felixduvallet/ros-travis-integration by Felix Duvallet <felixd@gmail.com>
 
 # NOTE: The build lifecycle on Travis.ci is something like this:
 #    before_install
@@ -84,7 +55,13 @@ install:
   - cd build
   - cmake ..
   - sudo make install 
-  
+  - cd ../..
+  - cd Mesh_Reconstruction
+  - mkdir build
+  - cd build
+  - cmake ..
+  - sudo make install
+  - cd ../..
 
 
 # Compile and test (mark the build as failed if any step fails). If the
