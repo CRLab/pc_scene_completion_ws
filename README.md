@@ -10,4 +10,12 @@ git clone https://github.com/CURG/pc_scene_completion_ws.git --recursive
 
 Follow installation instructions found in the .travis.yml file.
 
-## Running
+## More information
+Please read more about running and trouble shooting the pc_pipeline here:
+
+https://github.com/CURG/pc_pipeline_launch
+
+
+Please read more about the CNN for shape completion here:
+
+https://github.com/CURG/pc_object_completion_cnn
