@@ -62,6 +62,18 @@ install:
   - cmake ..
   - sudo make install
   - cd ../..
+  - cd Curvox
+  - sudo python setup.py install
+  - cd ..
+  - cd pycollada 
+  - sudo python setup.py install
+  - cd ..
+  - cd python-pcd
+  - sudo python setup.py install
+  - cd ..
+  - cd PyMCubes
+  - sudo python setup.py install
+  - cd ..
   - cd /home/travis/build/CURG/pc_scene_completion_ws/
 
 # Compile and test (mark the build as failed if any step fails). If the
