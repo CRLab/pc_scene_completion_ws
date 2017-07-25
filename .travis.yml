@@ -45,6 +45,7 @@ before_install:
   - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin
   - sudo apt-get install ros-$ROS_DISTRO-sensor-msgs ros-$ROS_DISTRO-geometry-msgs  ros-$ROS_DISTRO-tf-conversions  ros-$ROS_DISTRO-shape-msgs  ros-$ROS_DISTRO-dynamic-reconfigure
   - sudo apt-get install ros-$ROS_DISTRO-sensor-msgs ros-$ROS_DISTRO-pcl-ros
+  - sudo apt-get install python-dev
   - sudo apt-get install cython
 
 # Create a catkin workspace with the package under integration.
