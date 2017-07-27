@@ -1,9 +1,13 @@
 [![Build Status](https://travis-ci.org/CURG/pc_scene_completion_ws.svg?branch=master)](https://travis-ci.org/CURG/pc_scene_completion_ws)
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/Dxd0ItPhh7c/0.jpg)](https://www.youtube.com/watch?v=Dxd0ItPhh7c "Everything Is AWESOME")
-
 # pc_scene_completion_ws
-ROS scene completion workspace and external dependencies. This is a self contained workspace for running the pc_pipeline with the shape completion CNN. 
+ROS scene completion workspace and external dependencies. This is a self contained workspace for running the pc_pipeline with the shape completion CNN. This is the workspace from the IROS 2017 paper "Shape Completion Enabled Robotic Grasping" found here:
+
+http://shapecompletiongrasping.cs.columbia.edu/ 
+
+and is demonstrated in the video below:
+
+[![Shape Completion Enabled Robotic Grasping](https://img.youtube.com/vi/Dxd0ItPhh7c/0.jpg)](https://www.youtube.com/watch?v=Dxd0ItPhh7c "Shape Completion Enabled Robotic Grasping")
 
 
 Please read more about running and trouble shooting the pc_pipeline here:
