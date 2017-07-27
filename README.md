@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/CURG/pc_scene_completion_ws.svg?branch=master)](https://travis-ci.org/CURG/pc_scene_completion_ws)
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Everything Is AWESOME](https://img.youtube.com/vi/Dxd0ItPhh7c/0.jpg)](https://www.youtube.com/watch?v=Dxd0ItPhh7c "Everything Is AWESOME")
 
 # pc_scene_completion_ws
 ROS scene completion workspace and external dependencies. This is a self contained workspace for running the pc_pipeline with the shape completion CNN. 
